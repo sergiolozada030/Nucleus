@@ -41,6 +41,8 @@ img {
     display: block;
 }
 
+/* Estilo Header */
+
 .header {
     background-image: url('../img/header_bg.svg');
     background-repeat: no-repeat;
@@ -73,11 +75,13 @@ img {
     }
 }
 
-.header__contenedor {
+[class$='__contenedor']{
     max-width: 120rem;
     margin: 0 auto;
     width: 90%;
 }
+
+
 
 @media (min-width: 768px) {
     .header__barra {
@@ -162,3 +166,99 @@ img {
         color: var(--blanco);
     }
 }
+
+/* Estilo sesion Que es nucleus */
+
+
+.nucleus{
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.nucleus__heading{
+    text-align: center;
+}
+
+.nucleus__grid{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+    .nucleus__grid{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 5rem;
+        align-items: center;
+    }
+}
+
+.listado__elemento{
+    box-shadow: 0px 0px 15px .3px rgb(0 0 0 / .15);
+    padding: 1.5rem;
+    margin-bottom: 5rem;
+    transition-property: transform;
+    transition-duration: 300ms;
+    background-color: var(--blanco);
+}
+
+.listado__elemento:hover{
+    transform: scale(1.1);
+}
+
+.listado__heading{
+    font-size: 3rem;
+    color: var(--primario);
+    margin: 0;
+}
+
+.listado__texto{
+   margin: 0;
+}
+
+/* Estilos sesion seguridad nucleus */
+.seguridad{
+    margin: 18rem 0;
+    background-color: var(--primario);
+    padding: 20rem 0;
+    position: relative;
+}
+
+.seguridad::before, .seguridad::after{
+    background-color: var(--blanco);
+    content: '';
+    height: 20rem;
+    width: 120%;
+    position: absolute;
+}
+
+.seguridad::before{
+    margin-top: -10rem;
+    top: 0;
+    left: 0;
+    transform: rotate(3deg);
+}
+
+.seguridad::after{
+    margin-bottom: -10rem;
+    bottom: 0;
+    right: 0;
+    transform: rotate(3deg);
+
+}
+
+.seguridad__heading{
+    color: var(--blanco);
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+@media (min-width:768px){
+    .seguridad__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+        align-items: center;
+    }
+}
+
