@@ -253,32 +253,31 @@ img {
 .seguridad{
     margin: 18rem 0;
     background-color: var(--primario);
-    padding: 20rem 0;
-    position: relative;
+    padding: 10rem 0;
 }
 
-.seguridad::before, .seguridad::after{
+/* .seguridad::before, .seguridad::after{
     background-color: var(--blanco);
     content: '';
     height: 20rem;
-    width: 120%;
+    width: 100%;
     position: absolute;
 }
 
 .seguridad::before{
-    margin-top: -10rem;
+    margin-top: -5rem;
     top: 0;
     left: 0;
     transform: rotate(3deg);
 }
 
 .seguridad::after{
-    margin-bottom: -10rem;
+    margin-bottom: -5rem;
     bottom: 0;
     right: 0;
     transform: rotate(3deg);
 
-}
+} */
 
 .seguridad__heading{
     color: var(--blanco);
